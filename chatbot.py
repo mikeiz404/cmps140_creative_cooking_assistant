@@ -62,6 +62,7 @@ class Chatbot(object):
         self.nlu.register_message(YesNoMessage)
         self.nlu.register_message(SearchMessage)
         self.nlu.register_message(SystemMessage)
+	self.nlu.register_message(PreferenceMessage)
         startup(self.nlg)
 
     def handle_input(self, user_input):
